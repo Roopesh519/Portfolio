@@ -185,6 +185,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 /*-------------------------------------
         3.  Welcome-hero
 --------------------------------------*/
+
 .welcome-hero{
     display: flex;
     align-items: center;
@@ -195,6 +196,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     background-position: center;
     height:890px;
 }
+
+
+
 .welcome-hero:before{
     position:absolute;
     content: " ";
@@ -436,7 +440,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 350px;}
 }
 
 /*-------------------------------------
-        7. Experience
+        7. Showcase
 -------------------------------------*/
 .experience {
     padding: 50px 0 100px;
@@ -535,6 +539,12 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 350px;}
 
 .experience-time-responsive{display: none;}
 
+.text-align{
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+}
+
 /*-------------------------------------
         8. Profiles
 --------------------------------------*/
@@ -543,6 +553,9 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 350px;}
     border:  1px solid #e5ebf2;
 }
 
+.icon{
+    background:url(../images/profile/hackerrank.png)
+}
 .profiles-content {padding-top: 100px;}
 .profiles-content .col-sm-3{padding:0;}
 .profile-txt {
