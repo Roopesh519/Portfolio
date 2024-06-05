@@ -285,10 +285,21 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     height:  100%;
     background: rgba(31,44,108,.3);
 }
+
 .single-about-img img {
     max-width: 500px;
     height: 468px;
 }
+
+.single-about-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(14, 25, 80, .50);
+}
+
+.single-about-img:hover:before {
+    background: rgba(31, 44, 108, .5);
+}
+
 .about-list-icon{
     display: flex;
     justify-content: center;
