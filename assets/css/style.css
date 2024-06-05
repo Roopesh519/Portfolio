@@ -505,12 +505,14 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 350px;}
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.text{
+
+.text {
     text-align: center;
     background-color: rgb(255, 255, 255);
-    margin-bottom: 30px;
-    margin: 10px;
+    margin: 10px 0 30px; /* 10px top/bottom margin and 0 left/right */
+    padding: 5px;
 }
+
 /*experience-time*/
 .space{
     margin-top: 70px;
@@ -571,7 +573,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 350px;}
 
 .experience-time-responsive{display: none;}
 
-.text-align{
+.text1{
     text-align: center;
     padding: 5px;
     margin: 5px;
