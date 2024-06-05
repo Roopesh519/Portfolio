@@ -710,6 +710,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 350px;}
     position: relative;
     overflow: hidden;
     margin-bottom: 2px;
+    padding: 10%;
 }
 
 /*.item img*/
