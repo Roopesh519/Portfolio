@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const lines = [
-        'software developer engineer in test at 7EDGE',
+        'sde in test at 7EDGE',
         'web developer, designer',
         'android app developer',
         'designer'
