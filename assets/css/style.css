@@ -709,8 +709,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 350px;}
 .isotope .item {
     position: relative;
     overflow: hidden;
-    margin-bottom: 2px;
-    padding: 10%;
+    margin: 10px;
 }
 
 /*.item img*/
