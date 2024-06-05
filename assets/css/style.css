@@ -217,7 +217,30 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     height:890px;
 }
 
+#typing-text {
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid orange; /* Cursor effect */
+    width: fit-content;
+    margin: 10px 0; /* Adjust margin as needed */
+    display: block; /* Ensures it behaves like a block element */
+    text-align: center; /* Center text within the element */
+}
 
+.typing {
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
 
 .welcome-hero:before{
     position:absolute;
@@ -230,6 +253,16 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 }
 
 /*.header-text-area*/
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+} 
+
 .header-text h2 {
     color: #fff;
     font-size: 54px;
