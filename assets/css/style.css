@@ -224,7 +224,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     border-right: 0.15em solid orange; /* Cursor effect */
     width: fit-content;
     margin: 10px 0; /* Adjust margin as needed */
-    display: block; /* Ensures it behaves like a block element */
+    display: inline-block; /* Ensures it behaves like a block element */
     text-align: center; /* Center text within the element */
 }
 
