@@ -659,23 +659,6 @@
 											</div><!--/.row-->
 										  </form>
 										  <!--/form-->
-									<script>
-										function submitForm() {
-											// Get form values
-											var name = document.getElementById('name').value;
-											var email = document.getElementById('email').value;
-											var subject = document.getElementById('subject').value;
-											var comment = document.getElementById('comment').value;
-								
-											// Construct mailto link
-											var mailtoLink = 'mailto:rsroopesh565@gmail.com'
-												+ '?subject=' + encodeURIComponent(subject)
-												+ '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nSubject: ' + subject + '\nMessage: ' + comment);
-								
-											// Open default email client
-											window.location.href = mailtoLink;
-										}
-									</script>
 								
 								</div><!--/.contact-form-->
 							</div><!--/.single-contact-box-->
