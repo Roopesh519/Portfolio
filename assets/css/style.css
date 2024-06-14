@@ -975,6 +975,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 350px;}
     position: relative;
     width:auto;
     height: auto;
+    animation-name: example;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration:1s;
   /*   TODO: Center anchor */
   }
   .search__submit {
