@@ -1085,9 +1085,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 350px;}
 .dropdown {
     position: relative;
     display: inline-block;
-    /* position: fixed; */
-    top: 120px;
-    left:50px;
+    top: 55px;
+    left:35px;
     /* right: 60px; */
 
     transition: all ease-in-out 0.2s;
@@ -1102,7 +1101,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 350px;}
     border: none;
     cursor: pointer;
     border-radius: 40%;
-
+    /* display: inline; */
 }
 
 .dropbtn:hover, .dropbtn:focus {
