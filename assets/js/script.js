@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+    // List of projects
     const projects = [
         { id: 'postal_info', name: 'Postal Info' },
         { id: 'firewise', name: 'FireWise Fire Detection' },
@@ -54,32 +55,100 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'mindcare', name: 'MindCare' }
     ];
 
+    // Get references to elements
     const searchInput = document.querySelector('.search__bar');
-    const searchResults = document.getElementById('search-results');
+    const searchForm = document.getElementById('event-search-form');
+    const searchResults = document.createElement('ul');
+    searchResults.classList.add('search-results');
+    searchForm.appendChild(searchResults);
 
+    // Handle input event
     searchInput.addEventListener('input', function() {
         const query = this.value.toLowerCase();
-        searchResults.innerHTML = '';
+        searchResults.innerHTML = ''; // Clear previous results
+
         if (query.length > 0) {
             const filteredProjects = projects.filter(project => project.name.toLowerCase().includes(query));
-            searchResults.style.display = filteredProjects.length ? 'block' : 'none';
-            filteredProjects.forEach(project => {
-                const li = document.createElement('li');
-                li.textContent = project.name;
-                li.addEventListener('click', () => {
-                    window.location.hash = `#${project.id}`;
-                    searchResults.style.display = 'none';
+
+            if (filteredProjects.length > 0) {
+                searchResults.style.display = 'block';
+                filteredProjects.forEach(project => {
+                    const li = document.createElement('li');
+                    li.textContent = project.name;
+                    li.addEventListener('click', () => {
+                        window.location.hash = `#${project.id}`;
+                        searchResults.style.display = 'none';
+                    });
+                    searchResults.appendChild(li);
                 });
-                searchResults.appendChild(li);
-            });
+            } else {
+                searchResults.style.display = 'none';
+            }
         } else {
             searchResults.style.display = 'none';
         }
     });
 
+    // Hide results when clicking outside the search bar or results
     document.addEventListener('click', function(e) {
-        if (!searchInput.contains(e.target)) {
+        if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
             searchResults.style.display = 'none';
+        }
+    });
+});
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const projects = [
+//         { id: 'postal_info', name: 'Postal Info' },
+//         { id: 'firewise', name: 'FireWise Fire Detection' },
+//         { id: 'pacman', name: 'Pacman Game using python' },
+//         { id: 'mindcare', name: 'MindCare' }
+//     ];
+
+//     const searchInput = document.querySelector('.search__bar');
+//     const searchResults = document.getElementById('search-results');
+
+//     searchInput.addEventListener('input', function() {
+//         const query = this.value.toLowerCase();
+//         searchResults.innerHTML = '';
+//         if (query.length > 0) {
+//             const filteredProjects = projects.filter(project => project.name.toLowerCase().includes(query));
+//             searchResults.style.display = filteredProjects.length ? 'block' : 'none';
+//             filteredProjects.forEach(project => {
+//                 const li = document.createElement('li');
+//                 li.textContent = project.name;
+//                 li.addEventListener('click', () => {
+//                     window.location.hash = `#${project.id}`;
+//                     searchResults.style.display = 'none';
+//                 });
+//                 searchResults.appendChild(li);
+//             });
+//         } else {
+//             searchResults.style.display = 'none';
+//         }
+//     });
+
+//     document.addEventListener('click', function(e) {
+//         if (!searchInput.contains(e.target)) {
+//             searchResults.style.display = 'none';
+//         }
+//     });
+// });
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.dropbtn').addEventListener('click', function() {
+        document.querySelector('.dropdown-content').classList.toggle('show');
+    });
+
+    window.addEventListener('click', function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.querySelectorAll('.dropdown-content');
+            dropdowns.forEach(function(dropdown) {
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                }
+            });
         }
     });
 });

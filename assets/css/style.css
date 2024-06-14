@@ -958,13 +958,13 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 350px;}
     100%  {bottom:7px;}
 }
 
-/*=============Search bar==================*/
+/* =============Search bar==================
 /* Search bar styling */
 
-  .event__search__floater {
+  /* .event__search__floater {
     position: fixed;
     top: 120px;
-  /*   left:0; */
+
     right: 60px;
 
     transition: all ease-in-out 0.2s;
@@ -979,7 +979,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 350px;}
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-duration:1s;
-  /*   TODO: Center anchor */
   }
   .search__submit {
    opacity:0;
@@ -1026,6 +1025,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 350px;}
     left: -4px;
     border-radius: 50%;
     transition: all 0.2s;
+
   }
   .search__toggler:hover{
     cursor: pointer;
@@ -1079,5 +1079,57 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 350px;}
     border-radius: 0%;
     transform: rotate(-45deg);
   }
-  
-/*========================Thank you=================
+    */
+/*========================Thank you=================*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    /* position: fixed; */
+    top: 120px;
+    left:50px;
+    /* right: 60px; */
+
+    transition: all ease-in-out 0.2s;
+    transform: translate(-50%, -50%);
+}
+
+.dropbtn {
+    background-color: #b636ff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 40%;
+
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #020202;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20%;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
