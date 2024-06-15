@@ -1113,14 +1113,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 350px;}
     /* display: inline; */
 }
 
-.dropbtn .about{
-    position: relative;
-    animation-name: example1;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-duration:1s;
-}
-
 @keyframes example1 {
     0%   {right:0px;}
     100%  {right:7px;}
