@@ -1084,8 +1084,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 350px;}
 
 .dropdown {
     position: fixed;
-    right: 30px;
-    top: 120px;
+    right: 5px;
+    top: 95px;
     display: inline-block;
     text-align: center;
     font-size: 20px;
