@@ -97,45 +97,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     const projects = [
-//         { id: 'postal_info', name: 'Postal Info' },
-//         { id: 'firewise', name: 'FireWise Fire Detection' },
-//         { id: 'pacman', name: 'Pacman Game using python' },
-//         { id: 'mindcare', name: 'MindCare' }
-//     ];
-
-//     const searchInput = document.querySelector('.search__bar');
-//     const searchResults = document.getElementById('search-results');
-
-//     searchInput.addEventListener('input', function() {
-//         const query = this.value.toLowerCase();
-//         searchResults.innerHTML = '';
-//         if (query.length > 0) {
-//             const filteredProjects = projects.filter(project => project.name.toLowerCase().includes(query));
-//             searchResults.style.display = filteredProjects.length ? 'block' : 'none';
-//             filteredProjects.forEach(project => {
-//                 const li = document.createElement('li');
-//                 li.textContent = project.name;
-//                 li.addEventListener('click', () => {
-//                     window.location.hash = `#${project.id}`;
-//                     searchResults.style.display = 'none';
-//                 });
-//                 searchResults.appendChild(li);
-//             });
-//         } else {
-//             searchResults.style.display = 'none';
-//         }
-//     });
-
-//     document.addEventListener('click', function(e) {
-//         if (!searchInput.contains(e.target)) {
-//             searchResults.style.display = 'none';
-//         }
-//     });
-// });
-
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.dropbtn').addEventListener('click', function() {
         document.querySelector('.dropdown-content').classList.toggle('show');
