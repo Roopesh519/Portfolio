@@ -1144,6 +1144,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 350px;}
 .dropdown-content a:hover {
     color: white;
     background-color: #000000;
+    border-radius: 50%;
 }
 
 /* Show the dropdown content on hover */
