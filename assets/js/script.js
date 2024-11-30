@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const lines = [
-        'Currently an SDET at 7EDGE.',
-        'web developer, designer',
-        'android app developer',
-        'designer'
+        'Software Development Engineer in Test 1 at 7EDGE',
+        'AWS Certified Cloud Practitioner',
+        // 'android app developer',
+        // 'designer'
     ];
 
     const typingTextElement = document.getElementById('typing-text');
